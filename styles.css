@@ -17,6 +17,7 @@
     position: relative;
     color: black;
     text-align: center;
+    font-weight: bold;
 }
 .center {
     margin: 0;
@@ -75,16 +76,21 @@ p{
     border: none;
     border-radius: 15px;
     box-shadow: 0 9px #999;
-    margin-right: 200%;
+    margin-right: 200px;
+    margin-left: 200px;
+
   }
   .button:hover {background-color: purple;}
   .button:active {
       box-shadow: 0 5px #666;
       transform: translateY(4px);
   }
-  ul{
+ul{
       list-style-type: none;
-      margin-left: 30%;
-
-      
-  }
+      margin-left: 20%;
+    }
+.wrapper{
+  height: 200px;
+    position: relative;
+    border: none; 
+}
