@@ -32,39 +32,8 @@
     position: relative;
     border: none; 
   }
-  
-.start{ 
-  padding: 15px 25px;
-  font-size: 24px;
-  cursor: pointer;
-  position: relative;
-  text-decoration: none;
-  outline: none;
-  color: #fff;
-  background-color: purple;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
-}
-.button:hover {background-color: purple;}
-.button:active {
-    box-shadow: 0 5px #666;
-    transform: translateY(4px);
-}
 
-/****Countdown****/
-p{
-    font-family: Arial, Helvetica, sans-serif;
-    display: inline flex;
-    justify-content: center;
-    align-items: center;
-    height: 70px;
-    width: 200px;
-    font-size: 50px;
-    background-color: white;
-    margin: 0em;
-
-}
+/****Questions****/
 .questions{ 
     margin: 5px;
     font-size: 18px;
@@ -80,11 +49,35 @@ p{
     margin-left: 200px;
 
   }
+  /***Buttons***/
+  .button:hover {background-color: purple;
+    transform: scale(1.1);
+  }
+  .button:active {
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+  }
+
+  .start{ 
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    position: relative;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: purple;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+  }
   .button:hover {background-color: purple;}
   .button:active {
       box-shadow: 0 5px #666;
       transform: translateY(4px);
   }
+
+  /***Unordered lists***/
 ul{
       list-style-type: none;
       margin-left: 40%;
@@ -115,7 +108,8 @@ ul{
 }
 
 .countdwnclock{
- position: relative;
+ position: absolute;
+ left: 1000px;
  border: none;
  font-family: Arial, Helvetica, sans-serif;
  font-size: medium;
