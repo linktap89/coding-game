@@ -1,19 +1,20 @@
 // button countdown timer//
 document.addEventListener('DOMContentLoaded',() => {
     const timeLeftDisplay = document.querySelector('#time-left')
-    const startBtn = document.querySelector('#start-button')
+    // const startBtn = document.querySelector('#start-button')
     let timeLeft = 60
 //function that counts down the time//
     function countDown(){
-        setInterval(function(){
+        var setTimer = setInterval(function(){
             if(timeLeft <= 0 ){
-                clearInterval(timeLeft = 0)
+                clearInterval(setTimer)
             }
             timeLeftDisplay.innerHTML = timeLeft
             timeLeft -=1
         }, 1000)
     } //Action that needs to be activated for the countdown to begin//
-    startBtn.addEventListener('click', countDown)
+    // startBtn.addEventListener('click', countDown)
+    countDown()
 })
 
 
