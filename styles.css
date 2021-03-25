@@ -12,6 +12,7 @@
 }
 
 .copy {
+    margin-top: 10px;
     margin-bottom: 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
@@ -78,44 +79,34 @@
       transform: translateY(4px);
   }
 
-  /***Unordered lists***/
-ul{
-      list-style-type: none;
-      
-      margin-left: 40%;
-      margin-bottom: 15px;
-      font-size: 24px;
-      cursor: pointer;
-      position: relative;
-      text-decoration: none;
-      outline: none;
-      color: #fff;
-      background-color: purple;
-      border: none;
-      border-radius: 15px;
-      box-shadow: 0 9px #999;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: medium;
-      width: 200px;
-    }
-
-    input{
-      visibility: hidden;
-    }
+  /****Questions Button****/
+.questionsbtn {
+  margin-left: 400px;
+  border: none;
+  display: block;
+  line-height: 10px;
+  border-radius: 30px;
+  margin-top: 5px;
+  padding: 10px 30px;
+  cursor: pointer;
+  background-color: purple;
+  color: #fff;
+  width: 20%;
+}
 
 .countdwnclock{
- padding-top: 15px;
- padding-right:15px
- position: absolute;
- margin-left: 10px;
- left: 1000px;
- border: none;
- font-family: Arial, Helvetica, sans-serif;
- font-size: medium;
-
+  padding-top:15px;
+  padding: right 15px;
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  color: black;
+  margin-left: 10px;
 }
+
 .highscores{
-  padding-top: 15px;
+  padding-top: 40px;
   padding-right: 15px;
   position: absolute;
   font-family: Arial, Helvetica, sans-serif;
@@ -123,14 +114,5 @@ ul{
   font-weight: bold;
   color: purple;
   margin-left: 10px;
+}
   
-.ansright{
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: large;
-  color: green;
-}
-.answrong{
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: large;
-  color: red;
-}
