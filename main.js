@@ -39,7 +39,7 @@ function renderLastAnswer () {
     //Use JSON.parse to covert text to Javascript object
     var lastAnswer = JSON.parse(localStorage.getItem("testResult"));
     //Check if data returned is correct or in correct//
-    if (lastAnswer == true){
+    if (lastAnswer !== null){
         document.getElementById("savedAnswer"). innerHTML = lastAnswer.answer;
     } else {
         return;
@@ -52,7 +52,13 @@ saveLastAnswer();
 renderLastAnswer();
 });
 
-//Init function to come//
+//Init function //
+function init () {
+  renderLastAnswer();
+}
+init ();
+
+
 
 // var  userAnswers = [];
 // var answered = 0;
