@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="./reset.css"/>
     <link rel="stylesheet" href="./styles.css"/>
     <title>Coding Quiz Game | Race The Clock & Test Your Skills</title>
-    <script src="./main.js"></script>
     </head>
     <body>
         <header>
@@ -16,23 +15,23 @@
         <!--Questions & Answers-->
         <main>
             <!--Question 1-->
-            <section>
+            <section id ="question1" class="active">
                 <!--Answer is 4-->
                 <div class="copy">Question 1</div>
                 <div class="copy">"Which of these is not a primitive data type:"</div>
                 <button class="questionsbtn">1.strings</button>
                 <button class="questionsbtn">2.booleans</button>
                 <button class="questionsbtn">3.alerts</button>
-                <button class="questionsbtn">4.object</button>
+                <button class="questionsbtn correctAnswer">4.object</button>
             </section>
             <section>
                 <div class="copy">Question 2</div>
-                <!--Answer is 2-->
-                <div class="copy">"Which of the following code creates an object?"</div>
-                <button class="questionsbtn">1.var book = Object();</button>
-                <button class="questionsbtn">2.var book = new Object();</button>
-                <button class="questionsbtn">3.var book = new OBJECT();</button>
-                <button class="questionsbtn">4.var book = new Book();</button>
+                <!--Answer is 1-->
+                <div class="copy">"Which company developed JavaScript?"</div>
+                <button class="questionsbtn">1.Netscape</js></button>
+                <button class="questionsbtn">2.Bell Labs</button>
+                <button class="questionsbtn">3.Sun Micro Systems</button>
+                <button class="questionsbtn">4.IBM</button>
             </section>
             <section>
                 <div class="copy">Question 3</div>
@@ -52,6 +51,7 @@
                 <button class="questionsbtn">3..innerHTML</button>
                 <button class="questionsbtn">4.innerhtml()</button>
             </section>
+            <section>
             <div class="copy">Question 5</div>
                 <!--Answer is 3-->
                 <div class="copy">"How long did it take to build Javascipt</div>
@@ -61,22 +61,23 @@
                 <button class="questionsbtn">4.242 hrs</button>
             </section>
             <!--Leaderboard-->
-            <section class="leadboard">
+            <div class="leadboard">
                 <p> Game Over! </p>
                 <p>Your score:<span class="yourscore"</span></span></p>
                     </form>
                     <label for="name">Enter your intiasls</label>
                     <input type="name" id="name">
-                    <input type="submit" id="submit">
+                    <input type="submit" id="submit questionsbtn">
                 </form>
-            </section>
-            <section class="timedOut">
+            </div>
+            <div class="timedOut">
                 <div class="timerOut">You Ran Out Of Time!</div></p>
-            </section>
+            </div>
             <button class="restart">Try again</button>
             <button class="clearscore">Clear High Scores</button>
-            </section>
+            </div>
         </main>
+        <script src="./main.js"></script>
     </body>
     </html>
 

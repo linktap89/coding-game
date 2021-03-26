@@ -35,6 +35,14 @@
     position: relative;
     border: none; 
   }
+section.active {
+  display: block;
+
+}
+
+section {
+  display: none;
+}
 
 /****Questions****/
 .questions{
