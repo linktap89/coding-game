@@ -124,4 +124,44 @@ section {
   font-weight: bold;
   color: purple;
 }
-  
+
+#submit{
+  margin-left: 40%;
+  border: none;
+  display: block;
+  line-height: 10px;
+  border-radius: 30px;
+  margin-top: 5px;
+  padding: 10px 30px;
+  cursor: pointer;
+  background-color: purple;
+  color: #fff;
+  width: 20%;
+}
+
+.restart{
+  margin-left: 40%;
+  border: none;
+  display: block;
+  line-height: 10px;
+  border-radius: 30px;
+  margin-top: 5px;
+  padding: 10px 30px;
+  cursor: pointer;
+  background-color: purple;
+  color: #fff;
+  width: 20%;
+}
+.clearscore{
+  margin-left: 40%;
+  border: none;
+  display: block;
+  line-height: 10px;
+  border-radius: 30px;
+  margin-top: 5px;
+  padding: 10px 30px;
+  cursor: pointer;
+  background-color: purple;
+  color: #fff;
+  width: 20%;
+}

@@ -3,6 +3,8 @@
 var timerElement = document.querySelector(".timer-out");
 var submiteButton = document.querySelector(".button-submit");
 var buttonClear = document.querySelector (".button-submit");
+var main = document.querySelector("main");
+console.log (main)
 
 var questionSelction = document.querySelector(".questions");
 var questionsElement = document.querySelector(".questions-text");
@@ -14,7 +16,7 @@ var userInput = document.querySelector(".user-text");
 var userForm = document.querySelector(".user-form");
 
 //Variables//
-
+var currentQuestion = 0
 var questLimit;
 var questIndex;
 var buttons;
@@ -47,12 +49,32 @@ const questions = [
   {
     question: 'What function sets or returns the HTML content of an element?',
     choices: ['1.insideHTML', '2.InnerHTML', '3..innerHTML', '4.innerhtml()'],
+    correctAnswer:"innerHTML"
   },
   {
     question: 'How long did it take to build Javascipt',
     choices: ['1.3 years', '2.18 weeks', '3..10 days', '4.242 hrs'],
   },
 ];
+
+//questions builder//
+function questionBuilder(){
+  const template = `
+  <section id ="question1" class="active">
+  <div class="copy">Question ${currentQuestion+1}</div>
+  <!--Answer is 4-->
+  <div class="copy">${questions[currentQuestion].question}</div>
+  <button class="questionsbtn">${questions[currentQuestion].choices[0]}</button>
+  <button class="questionsbtn">${questions[currentQuestion].choices[1]}</button>
+  <button class="questionsbtn">${questions[currentQuestion].choices[2]}</button>
+  <button class="questionsbtn">${questions[currentQuestion].choices[3]}</button>
+  <div score class ="copy"></div>
+</section>
+  `
+main.innerHTML += template
+}
+questionBuilder()
+
 
 // Button countdown timer//
     const timeLeftDisplay = document.querySelector('#time-left')
