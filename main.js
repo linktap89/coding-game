@@ -1,8 +1,60 @@
-var score = 0;
+//Global Variables//
 
+var timerElement = document.querySelector(".timer-out");
+var submiteButton = document.querySelector(".button-submit");
+var buttonClear = document.querySelector (".button-submit");
 
+var questionSelction = document.querySelector(".questions");
+var questionsElement = document.querySelector(".questions-text");
+var choicesElement = document.querySelector(".choices-buttons");
+var highScoreElements = document.querySelector(".high-scores");
+var highScoresList = document.querySelector(".list-high-scores");
 
-// button countdown timer//
+var userInput = document.querySelector(".user-text");
+var userForm = document.querySelector(".user-form");
+
+//Variables//
+
+var questLimit;
+var questIndex;
+var buttons;
+var UserName;
+var correct;
+
+///Questions///
+
+var users = [];
+var scores = [];
+
+const questions = [
+  {
+    question: 'Which of these is not a primitive data type:',
+    choices: ['1.strings', '2.booleans', '3.alerts', '4.object'],
+  },
+  {
+    question: 'Which company developed JavaScript?',
+    choices: ['1.Netscape', '2.Bell Labs', '3.Sun Micro Systems', '4.IBM'],
+  },
+  {
+    question: 'What method do you use to check and verify a stack is empty ?',
+    choices: [
+      '1.isEmpty',
+      '2.checkstackstatus',
+      '3.checkstackvalue',
+      '4.isEmpty()',
+    ],
+  },
+  {
+    question: 'What function sets or returns the HTML content of an element?',
+    choices: ['1.insideHTML', '2.InnerHTML', '3..innerHTML', '4.innerhtml()'],
+  },
+  {
+    question: 'How long did it take to build Javascipt',
+    choices: ['1.3 years', '2.18 weeks', '3..10 days', '4.242 hrs'],
+  },
+];
+
+// Button countdown timer//
     const timeLeftDisplay = document.querySelector('#time-left')
     // const startBtn = document.querySelector('#start-button')
     let timeLeft = 60
@@ -18,27 +70,3 @@ var score = 0;
     } //Action that needs to be activated for the countdown to begin//
     // startBtn.addEventListener('click', countDown)
     countDown()
-
-
-/*******Question Buttons******************/
-
-/// eventListner button///
-const questionbtns = document.querySelectorAll (".questionsbtn")
-/// For each loop ///
-questionbtns.forEach(function (questionbtn){
-questionbtn.addEventListener("click",function (event){
-  console.log(event.target)
-  var currentbtn = event.target
-  if (currentbtn.className.includes("correctAnswer")){
-    console.log("Correct Answer")
-    question2.classList.toggle('active')
-    question1.classList.remove('active')
-  }
-  else{
-    console.log("Wrong Answer!")
-    timeLeft -= 10
-  }
-})
- })
-
- 
