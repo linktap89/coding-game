@@ -16,7 +16,7 @@ var userInput = document.querySelector(".user-text");
 var userForm = document.querySelector(".user-form");
 
 //Variables//
-var currentQuestion = 0
+var currentQuestion = 1
 var questLimit;
 var questIndex;
 var buttons;
@@ -32,10 +32,12 @@ const questions = [
   {
     question: 'Which of these is not a primitive data type:',
     choices: ['1.strings', '2.booleans', '3.alerts', '4.object'],
+    correctAnswer: "object"
   },
   {
     question: 'Which company developed JavaScript?',
     choices: ['1.Netscape', '2.Bell Labs', '3.Sun Micro Systems', '4.IBM'],
+    correctAnswer:"Netscape"
   },
   {
     question: 'What method do you use to check and verify a stack is empty ?',
@@ -44,6 +46,7 @@ const questions = [
       '2.checkstackstatus',
       '3.checkstackvalue',
       '4.isEmpty()',
+      correctAnswer:"isEmpty()"
     ],
   },
   {
@@ -54,10 +57,11 @@ const questions = [
   {
     question: 'How long did it take to build Javascipt',
     choices: ['1.3 years', '2.18 weeks', '3..10 days', '4.242 hrs'],
+    correctAnswer:".10 days"
   },
 ];
 
-//questions builder//
+//Question Builder//
 function questionBuilder(){
   const template = `
   <section id ="question1" class="active">
@@ -74,6 +78,19 @@ function questionBuilder(){
 main.innerHTML += template
 }
 questionBuilder()
+
+// //Correct Check Answer//
+// function checkAnswer () {
+//   if (this.value == currentQuestion.includes.choices.correctAnswer){
+//     correct++;
+//   }
+//   else{
+//     timeLeft -=10;
+//   }
+// }
+
+  
+
 
 
 // Button countdown timer//
